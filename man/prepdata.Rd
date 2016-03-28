@@ -4,7 +4,7 @@
 Prepares data for use with \code{snpmclust}
 }
 \description{
-Converts and transforms data from GenomeStudio output into form that can be handled by the function \code{snpmclust}. 
+Converts and transforms data from GenomeStudio output into form that can be handled by the function \code{snpmclust}.
 }
 \usage{
 prepdata(rawdata)
@@ -15,7 +15,7 @@ Data frame taken from an import of GenomeStudio full data table.
 }
 }
 \details{
-\code{prepdata} expects a data frame that includes columns from an import of a GenomeStudio full data table.  These columns include Name (the column of SNP rs-numbers) and the subcolumns Theta, R, GType, Score, X, Y, X.Raw, Y.Raw.  Sample IDs are taken from the subcolumn prefixes.  The data transformations in \code{prepdata} are an integral part of the SNPMClust 
+\code{prepdata} expects a data frame that includes columns from an import of a GenomeStudio full data table.  These columns include Name (the column of SNP rs-numbers) and the subcolumns Theta, R, GType, Score, X, Y, X.Raw, Y.Raw.  Sample IDs are taken from the subcolumn prefixes.  The data transformations in \code{prepdata} are an integral part of the SNPMClust
 methodology.
 }
 \value{
@@ -36,8 +36,8 @@ A list with the following components:
 \item{R.trans }{Numeric PxN matrix of Box-Cox-transformed signal magnitudes.}
 }
 \author{
-Stephen W. Erickson, PhD \email{SErickson@uams.edu}
-with Joshua Callaway, MPH \email{jcallaw3@utk.edu}
+Stephen W. Erickson \email{serickson@rti.org}
+with Joshua Callaway \email{joshcllw@gmail.com}
 }
 \examples{
 data(testset)
