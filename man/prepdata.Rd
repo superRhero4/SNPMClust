@@ -37,7 +37,7 @@ A list with the following components:
 }
 \author{
 Stephen W. Erickson \email{serickson@rti.org}
-with Joshua Callaway \email{joshcllw@gmail.com}
+with Joshua C. Callaway \email{joshcllw@gmail.com}
 }
 \examples{
 data(testset)
@@ -45,3 +45,4 @@ tmpfile = prepdata(testset)
 }
 \keyword{ rawdata }
 \keyword{ convert }
+\references{Stephen W. Erickson, Joshua Callaway (2016). SNPMClust: Bivariate Gaussian Genotype Clustering and Calling for Illumina Microarrays. Journal of Statistical Software, 71(2), 1-9. doi:10.18637/jss.v071.c02}

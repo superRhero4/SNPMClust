@@ -32,15 +32,15 @@ function(x,y,calls,priorpoints=length(x)*.2,xm1=NA,xm2=NA,xm3=NA,
     } 
   }
   if (length(table(calls))==2) {
-    if (names(which(table(calls)==min(table(calls))))=="AA") {
+    if ((names(which(table(calls)==min(table(calls))))=="AA")[1]) {
       xpseudo <- rnorm(priorpoints,mean=xmean1,sd=xsd)
       ypseudo <- rnorm(priorpoints,mean=ymean1,sd=ysd)
     }
-    if (names(which(table(calls)==min(table(calls))))=="AB") {
+    if ((names(which(table(calls)==min(table(calls))))=="AB")[1]) {
       xpseudo <- rnorm(priorpoints,mean=xmean2,sd=xsd)
       ypseudo <- rnorm(priorpoints,mean=ymean2,sd=ysd)
     }
-    if (names(which(table(calls)==min(table(calls))))=="BB") {
+    if ((names(which(table(calls)==min(table(calls))))=="BB")[1]) {
       xpseudo <- rnorm(priorpoints,mean=xmean3,sd=xsd)
       ypseudo <- rnorm(priorpoints,mean=ymean3,sd=ysd)
     }

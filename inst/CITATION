@@ -1,0 +1,23 @@
+bibentry(bibtype = "Article",
+  title        = "{SNPMClust}: Bivariate {G}aussian Genotype Clustering and Calling for {I}llumina Microarrays",
+  author       = c(person(given = c("Stephen", "W."),
+                          family = "Erickson",
+                          email = "serickson@rti.org"),
+                   person(given = c("Joshua", "C."),
+                          family = "Callaway",
+                          email = "joshcllw@gmail.com")),
+  journal      = "Journal of Statistical Software, Code Snippets",
+  year         = "2016",
+  volume       = "71",
+  number       = "2",
+  pages        = "1--9",
+  doi          = "10.18637/jss.v071.c02",
+
+  header       = "To cite SNPMClust in publications use:",
+  textVersion  =
+  paste("Stephen W. Erickson, Joshua Callaway (2016).",
+        "SNPMClust: Bivariate Gaussian Genotype Clustering and Calling for Illumina Microarrays.",
+        "Journal of Statistical Software, 71(2), 1-9.",
+        "doi:10.18637/jss.v071.c02")
+)
+

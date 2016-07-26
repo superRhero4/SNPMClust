@@ -1,10 +1,10 @@
 \name{snpmclust}
 \alias{snpmclust}
 \title{
-Genotype Clustering and Calling
+Genotype clustering and calling
 }
 \description{
-Genotype Clustering and Calling for Illumina Microarrays.
+Genotype clustering and calling for Illumina microarrays.
 }
 \usage{
 snpmclust(indata, p = 1, priorfrac = 0.2, uncertcutoff = 0.01, qcutoff = 0,
@@ -53,13 +53,13 @@ A list with the following components:
 }
 \author{
 Stephen W. Erickson \email{serickson@rti.org}
-with Joshua Callaway \email{joshcllw@gmail.com}
+with Joshua C. Callaway \email{joshcllw@gmail.com}
 }
 \examples{
 data(testset)
 tmpfile = prepdata(testset)
 snpmclust(tmpfile, p=1, showplots=TRUE)
 }
-
 \keyword{ cluster }
 \keyword{ SNPs }
+\references{Stephen W. Erickson, Joshua Callaway (2016). SNPMClust: Bivariate Gaussian Genotype Clustering and Calling for Illumina Microarrays. Journal of Statistical Software, 71(2), 1-9. doi:10.18637/jss.v071.c02}

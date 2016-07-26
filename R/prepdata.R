@@ -41,9 +41,9 @@ function(rawdata) {
     if (sum(indata$R[p,]>.05,na.rm=TRUE) > 1) {
       tranpar = boxcox(indata$R[p,][indata$R[p,]>.05] ~ indata$logratio[p,][indata$R[p,]>.05],plotit=FALSE)
       lambda = tranpar$x[tranpar$y==max(tranpar$y)]
-      if (is.na(lambda)) lambda = 0
-      if (lambda==0) {indata$R.trans[p,] = log(indata$R[p,])} else {
-        indata$R.trans[p,] = (indata$R[p,]^lambda-1)/lambda
+      if (is.na(lambda)[1]) lambda = 0
+      if ((lambda==0)[1]) {indata$R.trans[p,] = log(indata$R[p,])} else {
+        indata$R.trans[p,] = (indata$R[p,]^lambda[1]-1)/lambda[1]
       }
       rm(lambda,tranpar)
     }

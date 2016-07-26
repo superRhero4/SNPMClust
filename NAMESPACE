@@ -1,4 +1,2 @@
 exportPattern("^[[:alpha:]]+")
 import("MASS","mclust")
-importFrom("graphics", "plot", "points")
-importFrom("stats", "lm", "lowess", "quantile", "rnorm", "sd")
